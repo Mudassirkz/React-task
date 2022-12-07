@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
+  let arr = [];
+  ["R>A", "F>R", "A>N", "C>E", "N>C"].map((item, index) => {
+    if (item[0] < item[2]) {
+      arr.push(item[0]);
+      arr.push(item[2]);
+    }
+  });
+  let result = arr.join("").toLowerCase();
+  console.log(result);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <p>{result}</p>
+      </div>
     </div>
   );
 }
