@@ -1,6 +1,10 @@
 import "./App.css";
 
 function App() {
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
   let arr = [];
   ["R>A", "F>R", "A>N", "C>E", "N>C"].map((item, index) => {
     if (item[0] < item[2]) {
@@ -8,7 +12,7 @@ function App() {
       arr.push(item[2]);
     }
   });
-  let result = arr.join("").toLowerCase();
+  let result = capitalizeFirstLetter(arr.join("").toLowerCase());
   console.log(result);
 
   return (
