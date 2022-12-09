@@ -1,10 +1,7 @@
 import "./App.css";
+import { capitalizeFirstLetter } from "./common/capitalizeFirstLetter";
 
 function App() {
-  function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  }
-
   let arr = [];
   ["R>A", "F>R", "A>N", "C>E", "N>C"].map((item, index) => {
     if (item[0] < item[2]) {
