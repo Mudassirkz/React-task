@@ -10,7 +10,6 @@ function App() {
     }
   });
   let result = capitalizeFirstLetter(arr.join("").toLowerCase());
-  console.log(result);
 
   return (
     <div className="App">
