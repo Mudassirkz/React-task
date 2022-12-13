@@ -3,7 +3,7 @@ import { capitalizeFirstLetter } from "./common/capitalizeFirstLetter";
 
 function App() {
   let arr = [];
-  ["R>A", "F>R", "A>N", "C>E", "N>C"].map((item, index) => {
+  ["R>A", "F>R", "A>N", "C>E", "N>C"].map((item) => {
     if (item[0] < item[2]) {
       arr.push(item[0]);
       arr.push(item[2]);
