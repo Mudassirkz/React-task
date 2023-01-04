@@ -19,7 +19,8 @@ function App() {
     console.log("res", res);
   }, []);
 
-  return <div className="App">{/* <div><p>{res}</p></div> */}</div>;
+  return null;
+  // return <div className="App"><div><p>{res}</p></div></div>;
 }
 
 export default App;
