@@ -34,6 +34,22 @@ function App() {
     [handleUpdateNum]
   );
 
+  // 1. Use let instead of var
+  // if I using var output will // 3 3 3 but if I using Let then output will be // 0 1 2
+  for (let i = 0; i < 3; i++) {
+    setTimeout(() => {
+      console.log(i); // 0 1 2
+    }, 1000);
+  }
+  // 2. Using closures
+  for (var i = 0; i < 3; i++) {
+    ((n) => {
+      setTimeout(() => {
+        console.log(n); //  0 1 2
+      }, 1000);
+    })(i);
+  }
+
   return (
     <div className="App">
       <div>
