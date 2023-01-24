@@ -55,7 +55,6 @@ function App() {
       <div>
         <p>{count}</p>
         {getChildComp}
-        <p></p>
         <Button
           onClick={() => {
             setCount((prevState) => prevState + 1);
