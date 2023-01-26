@@ -51,19 +51,21 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div>
-        <p>{count}</p>
-        {getChildComp}
-        <Button
-          onClick={() => {
-            setCount((prevState) => prevState + 1);
-          }}
-        >
-          Addition
-        </Button>
+    <>
+      <div className="App">
+        <div>
+          <p>{count}</p>
+          {getChildComp}
+          <Button
+            onClick={() => {
+              setCount((prevState) => prevState + 1);
+            }}
+          >
+            Addition
+          </Button>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
